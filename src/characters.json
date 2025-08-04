@@ -313,5 +313,20 @@
             "r": -2,
             "s": 42
         }
+    },
+    {
+        "id": "22",
+        "name": "Nonoka",
+        "character": "nonoka",
+        "img": "nonoka.png",
+        "fillColor": "#eee1af",
+        "strokeColor": "#beb48c",
+        "defaultText": {
+            "text": "something",
+            "x": 148,
+            "y": 58,
+            "r": -2,
+            "s": 42
+        }
     }
 ]
