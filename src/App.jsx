@@ -175,7 +175,7 @@ function App() {
   const download = async () => {
     const canvas = document.getElementsByTagName("canvas")[0];
     const link = document.createElement("a");
-    link.download = `${characters[character].name}_arcst.yurisaki.top.png`;
+    link.download = `${characters[character].name}_gekichumai_sticker_maker.png`;
     link.href = canvas.toDataURL();
     link.style.display = "none";
     document.body.appendChild(link);

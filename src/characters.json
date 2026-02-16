@@ -1,11 +1,11 @@
 [
     {
         "id": "1",
-        "name": "Ayu",
-        "character": "ayu",
-        "img": "ayu.png",
-        "fillColor": "#3BEADF",
-        "strokeColor": "#30bbb2",
+        "name": "Salt",
+        "character": "salt",
+        "img": "salt/1.png",
+        "fillColor": "#e9d7fd",
+        "strokeColor": "#7e6aab",
         "defaultText": {
             "text": "something",
             "x": 148,
