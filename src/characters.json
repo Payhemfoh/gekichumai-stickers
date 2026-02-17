@@ -4,9 +4,201 @@
         "characters": [
             {
                 "id": "1",
-                "name": "Salt",
-                "character": "salt",
-                "img": "salt/1.png",
+                "name": "Kaede",
+                "character": "kaede",
+                "img": "ongeki/1.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "2",
+                "name": "Yuzu",
+                "character": "yuzu",
+                "img": "ongeki/2.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "3",
+                "name": "Ryo",
+                "character": "Ryo",
+                "img": "ongeki/3.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "4",
+                "name": "Saki",
+                "character": "saki",
+                "img": "ongeki/4.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "5",
+                "name": "Akari",
+                "character": "akari",
+                "img": "ongeki/5.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "6",
+                "name": "Koboshi",
+                "character": "koboshi",
+                "img": "ongeki/6.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "7",
+                "name": "Haruna",
+                "character": "haruna",
+                "img": "ongeki/7.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "8",
+                "name": "Akari",
+                "character": "akari",
+                "img": "ongeki/8.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "9",
+                "name": "Yuzu and Akari",
+                "character": "yuzu_and_akari",
+                "img": "ongeki/9.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "10",
+                "name": "Akari",
+                "character": "akari",
+                "img": "ongeki/10.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "11",
+                "name": "Ayaka",
+                "character": "ayaka",
+                "img": "ongeki/11.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "12",
+                "name": "Arisu",
+                "character": "arisu",
+                "img": "ongeki/12.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "13",
+                "name": "Tsumugi",
+                "character": "tsumugi",
+                "img": "ongeki/13.png",
                 "fillColor": "#e9d7fd",
                 "strokeColor": "#7e6aab",
                 "defaultText": {
