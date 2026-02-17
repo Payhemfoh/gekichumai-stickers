@@ -7,8 +7,8 @@
                 "name": "Kaede",
                 "character": "kaede",
                 "img": "ongeki/1.png",
-                "fillColor": "#e9d7fd",
-                "strokeColor": "#7e6aab",
+                "fillColor": "#797b7a",
+                "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
                     "x": 148,
@@ -23,14 +23,14 @@
                 "name": "Yuzu",
                 "character": "yuzu",
                 "img": "ongeki/2.png",
-                "fillColor": "#e9d7fd",
-                "strokeColor": "#7e6aab",
+                "fillColor": "#fef7c0",
+                "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
                     "x": 148,
-                    "y": 58,
-                    "r": -2,
-                    "s": 42,
+                    "y": 245,
+                    "r": 0,
+                    "s": 30,
                     "spaceSize": 50
                 }
             },
@@ -39,8 +39,8 @@
                 "name": "Ryo",
                 "character": "Ryo",
                 "img": "ongeki/3.png",
-                "fillColor": "#e9d7fd",
-                "strokeColor": "#7e6aab",
+                "fillColor": "#a59cc1",
+                "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
                     "x": 148,
@@ -55,8 +55,8 @@
                 "name": "Saki",
                 "character": "saki",
                 "img": "ongeki/4.png",
-                "fillColor": "#e9d7fd",
-                "strokeColor": "#7e6aab",
+                "fillColor": "#d2dee0",
+                "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
                     "x": 148,
@@ -71,8 +71,8 @@
                 "name": "Akari",
                 "character": "akari",
                 "img": "ongeki/5.png",
-                "fillColor": "#e9d7fd",
-                "strokeColor": "#7e6aab",
+                "fillColor": "#fccbcd",
+                "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
                     "x": 148,
@@ -87,8 +87,8 @@
                 "name": "Koboshi",
                 "character": "koboshi",
                 "img": "ongeki/6.png",
-                "fillColor": "#e9d7fd",
-                "strokeColor": "#7e6aab",
+                "fillColor": "#8696a7",
+                "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
                     "x": 148,
@@ -103,8 +103,8 @@
                 "name": "Haruna",
                 "character": "haruna",
                 "img": "ongeki/7.png",
-                "fillColor": "#e9d7fd",
-                "strokeColor": "#7e6aab",
+                "fillColor": "#8d7b77",
+                "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
                     "x": 148,
@@ -119,8 +119,8 @@
                 "name": "Akari",
                 "character": "akari",
                 "img": "ongeki/8.png",
-                "fillColor": "#e9d7fd",
-                "strokeColor": "#7e6aab",
+                "fillColor": "#fccbcd",
+                "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
                     "x": 148,
@@ -135,8 +135,8 @@
                 "name": "Yuzu and Akari",
                 "character": "yuzu_and_akari",
                 "img": "ongeki/9.png",
-                "fillColor": "#e9d7fd",
-                "strokeColor": "#7e6aab",
+                "fillColor": "#fccbcd",
+                "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
                     "x": 148,
@@ -151,8 +151,8 @@
                 "name": "Akari",
                 "character": "akari",
                 "img": "ongeki/10.png",
-                "fillColor": "#e9d7fd",
-                "strokeColor": "#7e6aab",
+                "fillColor": "#fccbcd",
+                "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
                     "x": 148,
@@ -167,8 +167,8 @@
                 "name": "Ayaka",
                 "character": "ayaka",
                 "img": "ongeki/11.png",
-                "fillColor": "#e9d7fd",
-                "strokeColor": "#7e6aab",
+                "fillColor": "#d5ac9c",
+                "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
                     "x": 148,
@@ -183,8 +183,8 @@
                 "name": "Arisu",
                 "character": "arisu",
                 "img": "ongeki/12.png",
-                "fillColor": "#e9d7fd",
-                "strokeColor": "#7e6aab",
+                "fillColor": "#9fc5e8",
+                "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
                     "x": 148,
@@ -199,8 +199,8 @@
                 "name": "Tsumugi",
                 "character": "tsumugi",
                 "img": "ongeki/13.png",
-                "fillColor": "#e9d7fd",
-                "strokeColor": "#7e6aab",
+                "fillColor": "#7a8489",
+                "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
                     "x": 148,
@@ -219,7 +219,7 @@
                 "id": "1",
                 "name": "Salt",
                 "character": "salt",
-                "img": "salt/1.jpg",
+                "img": "salt/1.png",
                 "fillColor": "#e9d7fd",
                 "strokeColor": "#7e6aab",
                 "defaultText": {
@@ -240,8 +240,690 @@
                 "id": "1",
                 "name": "Salt",
                 "character": "salt",
-                "img": "salt/3.jpg",
+                "img": "salt/3.png",
                 "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            }
+        ]
+    },
+    {
+        "category": "Salt by AlicitruSalt",
+        "characters": [
+            {
+                "id": "1",
+                "name": "Salt",
+                "character": "salt",
+                    "img": "salt/1.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "2",
+                "name": "Salt",
+                "character": "salt",
+                    "img": "salt/2.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "3",
+                "name": "Salt",
+                "character": "salt",
+                    "img": "salt/3.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "4",
+                "name": "Salt",
+                "character": "salt",
+                    "img": "salt/4.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "5",
+                "name": "Salt",
+                "character": "salt",
+                    "img": "salt/5.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "6",
+                "name": "Salt",
+                "character": "salt",
+                    "img": "salt/6.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "7",
+                "name": "Salt",
+                "character": "salt",
+                    "img": "salt/7.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "8",
+                "name": "Salt",
+                "character": "salt",
+                    "img": "salt/8.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "9",
+                "name": "Salt",
+                "character": "salt",
+                    "img": "salt/9.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "10",
+                "name": "Salt",
+                "character": "salt",
+                    "img": "salt/10.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "11",
+                "name": "Salt",
+                "character": "salt",
+                    "img": "salt/11.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "12",
+                "name": "Salt",
+                "character": "salt",
+                    "img": "salt/12.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "13",
+                "name": "Salt",
+                "character": "salt",
+                    "img": "salt/13.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "14",
+                "name": "Salt",
+                "character": "salt",
+                    "img": "salt/14.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "15",
+                "name": "Salt",
+                "character": "salt",
+                    "img": "salt/15.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "16",
+                "name": "Salt",
+                "character": "salt",
+                    "img": "salt/16.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "17",
+                "name": "Salt",
+                "character": "salt",
+                    "img": "salt/17.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "18",
+                "name": "Salt",
+                "character": "salt",
+                    "img": "salt/18.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "19",
+                "name": "Salt",
+                "character": "salt",
+                    "img": "salt/19.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "20",
+                "name": "Salt",
+                "character": "salt",
+                    "img": "salt/20.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "21",
+                "name": "Salt",
+                "character": "salt",
+                    "img": "salt/21.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "22",
+                "name": "Salt",
+                "character": "salt",
+                    "img": "salt/22.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 80,
+                    "y": 58,
+                    "r": 0,
+                    "s": 25,
+                    "spaceSize": 40
+                }
+            }
+        ]
+    },
+    {
+        "category": "Acid by AlicitruSalt",
+        "characters": [
+            {
+                "id": "1",
+                "name": "Acid",
+                "character": "acid",
+                "img": "acid/1.jpg",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "2",
+                "name": "Acid",
+                "character": "acid",
+                "img": "acid/2.jpg",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "3",
+                "name": "Acid",
+                "character": "acid",
+                "img": "acid/3.jpg",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "4",
+                "name": "Acid",
+                "character": "acid",
+                "img": "acid/4.jpg",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "5",
+                "name": "Acid",
+                "character": "acid",
+                "img": "acid/5.jpg",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "6",
+                "name": "Acid",
+                "character": "acid",
+                "img": "acid/6.jpg",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "7",
+                "name": "Acid",
+                "character": "acid",
+                "img": "acid/7.jpg",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "8",
+                "name": "Acid",
+                "character": "acid",
+                "img": "acid/8.jpg",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "9",
+                "name": "Acid",
+                "character": "acid",
+                "img": "acid/9.jpg",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "10",
+                "name": "Acid",
+                "character": "acid",
+                "img": "acid/10.jpg",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "11",
+                "name": "Acid",
+                "character": "acid",
+                "img": "acid/11.jpg",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "12",
+                "name": "Acid",
+                "character": "acid",
+                "img": "acid/12.jpg",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "13",
+                "name": "Acid",
+                "character": "acid",
+                "img": "acid/13.jpg",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "14",
+                "name": "Acid",
+                "character": "acid",
+                "img": "acid/14.jpg",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "15",
+                "name": "Acid",
+                "character": "acid",
+                "img": "acid/15.jpg",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "16",
+                "name": "Acid",
+                "character": "acid",
+                "img": "acid/16.jpg",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "17",
+                "name": "Acid",
+                "character": "acid",
+                "img": "acid/17.jpg",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "18",
+                "name": "Acid",
+                "character": "acid",
+                "img": "acid/18.jpg",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "19",
+                "name": "Acid",
+                "character": "acid",
+                "img": "acid/19.jpg",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "20",
+                "name": "Acid",
+                "character": "acid",
+                "img": "acid/20.jpg",
+                "fillColor": "#f0eaee",
                 "strokeColor": "#7e6aab",
                 "defaultText": {
                     "text": "something",
