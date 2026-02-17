@@ -58,24 +58,6 @@ export default function Info({ open, handleClose, config }: InfoProps) {
                 button
                 onClick={() =>
                   (window.location.href =
-                    "https://x.com/Xestarrrr")
-                }
-              >
-                <ListItemAvatar>
-                  <Avatar
-                    alt="Contributors"
-                    src="https://pbs.twimg.com/profile_images/1829853648521723905/rnRP3FCZ_400x400.jpg"
-                  />
-                </ListItemAvatar>
-                <ListItemText
-                  primary="Xestarrrr"
-                  secondary="for the GekiChuMai sticker images"
-                />
-              </ListItem>
-              <ListItem
-                button
-                onClick={() =>
-                  (window.location.href =
                     "https://github.com/TheOriginalAyaka")
                 }
               >

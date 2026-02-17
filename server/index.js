@@ -10,8 +10,18 @@ const LOG_FILE = path.join(__dirname, 'logs.json');
 
 app.use(express.json());
 // Allow CORS from localhost development hosts
+// Restrict CORS to allowed origins. For local development we allow localhost:3000 as well.
+const allowedOrigins = [
+  'https://www.yafumin-webapp.ddnsfree.com',
+  'http://localhost:3000',
+  'http://127.0.0.1:3000'
+];
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', '*');
+  const origin = req.header('origin');
+  if (origin && allowedOrigins.includes(origin)) {
+    // echo back the allowed origin (do not use '*')
+    res.setHeader('Access-Control-Allow-Origin', origin);
+  }
   res.setHeader('Access-Control-Allow-Methods', 'GET,POST,OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, x-key');
   if (req.method === 'OPTIONS') return res.sendStatus(204);
