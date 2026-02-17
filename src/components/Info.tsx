@@ -10,8 +10,18 @@ import ListItemText from "@mui/material/ListItemText";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
 import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
+interface AppConfig {
+  global?: number;
+  [k: string]: any;
+}
 
-export default function Info({ open, handleClose, config }) {
+interface InfoProps {
+  open: boolean;
+  handleClose: () => void;
+  config?: AppConfig;
+}
+
+export default function Info({ open, handleClose, config }: InfoProps) {
   return (
     <div>
       <Dialog

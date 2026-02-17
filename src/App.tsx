@@ -1,8 +1,7 @@
 import SSFangTangTi from "./fonts/ShangShouFangTangTi.woff2";
 import "./App.css";
 import Canvas from "./components/Canvas";
-import { useState, useEffect } from "react";
-import characters from "./characters.json";
+import { useState, useEffect, useRef } from "react";
 import Slider from "@mui/material/Slider";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
@@ -12,15 +11,17 @@ import Picker from "./components/Picker";
 import Info from "./components/Info";
 import getConfiguration from "./utils/config";
 import log from "./utils/log";
-import { preloadFont } from "./utils/preload";
+import { preloadFont, categories } from "./utils/preload";
+import { SubtitleParameter } from "./models/SubtitleParameter";
+import type { Character } from "./models/Character";
 
-const { ClipboardItem } = window;
+const ClipboardItem = (window as any).ClipboardItem;
 
 function App() {
-  const [config, setConfig] = useState(null);
+  const [config, setConfig] = useState<any | null>(null);
 
   // using this to trigger the useEffect because lazy to think of a better way
-  const [rand, setRand] = useState(0);
+  const [rand, setRand] = useState<number>(0);
   useEffect(() => {
     async function doGetConfiguration() {
       try {
@@ -49,7 +50,7 @@ function App() {
     doPreloadFont();
   }, []);
 
-  const [infoOpen, setInfoOpen] = useState(false);
+  const [infoOpen, setInfoOpen] = useState<boolean>(false);
   const handleClickOpen = () => {
     setInfoOpen(true);
   };
@@ -57,46 +58,71 @@ function App() {
     setInfoOpen(false);
   };
 
-  const [openCopySnackbar, setOpenCopySnackbar] = useState(false);
-  const handleSnackClose = (e, r) => {
+  const [openCopySnackbar, setOpenCopySnackbar] = useState<boolean>(false);
+  const handleSnackClose = (_e?: React.SyntheticEvent | Event, _r?: string) => {
     setOpenCopySnackbar(false);
   };
 
-  const [character, setCharacter] = useState(5);
-  const [text, setText] = useState(characters[character].defaultText.text);
-  const [position, setPosition] = useState({
-    x: characters[character].defaultText.x,
-    y: characters[character].defaultText.y,
-  });
-  const [fontSize, setFontSize] = useState(characters[character].defaultText.s);
-  const [spaceSize, setSpaceSize] = useState(50);
-  const [rotate, setRotate] = useState(characters[character].defaultText.r);
-  const [curve, setCurve] = useState(false);
-  const [loaded, setLoaded] = useState(false);
-  const img = new Image();
+  const [categoryIndex, setSelectedCategory] = useState<number>(0);
+  const [characterIndex, setSelectedCharacter] = useState<number>(0);
+  const [selectedCharacter, setCharacter] = useState<Character | null>(
+    categories && categories.length > 0 && categories[0].characters.length > 0
+      ? categories[0].characters[0]
+      : null
+  );
+
+  const [subtitle, setSubtitle] = useState<SubtitleParameter>(
+    selectedCharacter
+      ? new SubtitleParameter(
+          selectedCharacter.defaultParam.text,
+          selectedCharacter.defaultParam.x,
+          selectedCharacter.defaultParam.y,
+          selectedCharacter.defaultParam.r,
+          selectedCharacter.defaultParam.s,
+          selectedCharacter.defaultParam.spaceSize ?? 50
+        )
+      : new SubtitleParameter("", 0, 0, 0, 16, 50)
+  );
+
+  // spacing is now part of SubtitleParameter
+  const [curve, setCurve] = useState<boolean>(false);
+  const [loaded, setLoaded] = useState<boolean>(false);
+  const imgRef = useRef<HTMLImageElement>(new Image());
 
   useEffect(() => {
-    setText(characters[character].defaultText.text);
-    setPosition({
-      x: characters[character].defaultText.x,
-      y: characters[character].defaultText.y,
-    });
-    setRotate(characters[character].defaultText.r);
-    setFontSize(characters[character].defaultText.s);
-    setLoaded(false);
-  }, [character]);
+    if (selectedCharacter) {
+      setSubtitle(selectedCharacter.defaultParam);
+      setLoaded(false);
+    }
+  }, [selectedCharacter]);
 
-  img.src = "/img/" + characters[character].img;
+  useEffect(() => {
+    if (
+      categoryIndex < 0 ||
+      categoryIndex >= categories.length ||
+      characterIndex < 0 ||
+      characterIndex >= categories[categoryIndex].characters.length
+    )
+      return;
 
-  img.onload = () => {
-    setLoaded(true);
-  };
+    setCharacter(categories[categoryIndex].characters[characterIndex]);
+  }, [categoryIndex, characterIndex]);
 
-  const draw = (ctx) => {
+  // update image src whenever selectedCharacter changes
+  useEffect(() => {
+    const img = imgRef.current;
+    if (!selectedCharacter) return;
+    img.src = "/img/" + (selectedCharacter.imgPath ?? "");
+    img.onload = () => setLoaded(true);
+  }, [selectedCharacter]);
+
+  const draw = (ctx: CanvasRenderingContext2D) => {
     ctx.canvas.width = 296;
     ctx.canvas.height = 256;
 
-    if (loaded && document.fonts.check("12px YurukaStd")) {
+    const img = imgRef.current;
+
+    if (loaded && document.fonts.check("12px YurukaStd") && img.width) {
       const hRatio = ctx.canvas.width / img.width;
       const vRatio = ctx.canvas.height / img.height;
       const ratio = Math.min(hRatio, vRatio);
@@ -114,14 +140,19 @@ function App() {
         img.width * ratio,
         img.height * ratio
       );
+      const fontSize = subtitle.s;
+      const rotate = subtitle.r;
+      const text = subtitle.text || "";
+
       ctx.font = `${fontSize}px YurukaStd, SSFangTangTi`;
       ctx.miterLimit = 2.5;
       ctx.save();
 
-      ctx.translate(position.x, position.y);
-      ctx.rotate(rotate / 10);
-      ctx.textAlign = "center";
-      ctx.fillStyle = characters[character].fillColor;
+  ctx.translate(subtitle.x ?? 0, subtitle.y ?? 0);
+      ctx.rotate((rotate as number) / 10);
+  ctx.textAlign = "center";
+  if (!selectedCharacter) return;
+  ctx.fillStyle = selectedCharacter.fillColor ?? "black";
       const lines = text.split("\n");
       if (curve) {
         ctx.save();
@@ -137,8 +168,8 @@ function App() {
                 ctx.strokeStyle = "white";
                 ctx.lineWidth = 15;
                 ctx.strokeText(line[i], 0, 0);
-              } else {
-                ctx.strokeStyle = characters[character].strokeColor;
+                } else {
+                ctx.strokeStyle = selectedCharacter.strokeColor;
                 ctx.lineWidth = 5;
                 ctx.strokeText(line[i], 0, 0);
                 ctx.fillText(line[i], 0, 0);
@@ -147,23 +178,42 @@ function App() {
             }
             ctx.restore();
           }
-          ctx.translate(0, ((spaceSize - 50) / 50 + 1) * fontSize);
+            ctx.translate(0, ((subtitle.spaceSize - 50) / 50 + 1) * fontSize);
         }
         ctx.restore();
       } else {
+        // Draw per-character so spacing between characters can be controlled
+        // Use substring measurements (ctx.measureText on substrings) which respects kerning
+        const letterSpacing = ((subtitle.spaceSize - 50) / 50) * (fontSize * 0.15);
         for (let pass = 0; pass < 2; pass++) {
           for (let i = 0, k = 0; i < lines.length; i++) {
-            if (pass === 0) {
-              ctx.strokeStyle = "white";
-              ctx.lineWidth = 15;
-              ctx.strokeText(lines[i], 0, k);
-            } else {
-              ctx.strokeStyle = characters[character].strokeColor;
-              ctx.lineWidth = 5;
-              ctx.strokeText(lines[i], 0, k);
-              ctx.fillText(lines[i], 0, k);
+            const line = lines[i];
+            const rawLineWidth = ctx.measureText(line).width;
+            const totalWidth = rawLineWidth + Math.max(0, line.length - 1) * letterSpacing;
+            // center start
+            const startX = -totalWidth / 2;
+
+            for (let ci = 0; ci < line.length; ci++) {
+              const ch = line[ci];
+              // cumulative width of substring before this char (kerning-aware)
+              const before = ci > 0 ? ctx.measureText(line.substring(0, ci)).width : 0;
+              const chWidth = ctx.measureText(ch).width;
+              // center of this glyph
+              const cx = startX + before + ci * letterSpacing + chWidth / 2;
+
+              if (pass === 0) {
+                ctx.strokeStyle = "white";
+                ctx.lineWidth = 15;
+                ctx.strokeText(ch, cx, k);
+              } else {
+                ctx.strokeStyle = selectedCharacter?.strokeColor ?? "black";
+                ctx.lineWidth = 5;
+                ctx.strokeText(ch, cx, k);
+                ctx.fillText(ch, cx, k);
+              }
             }
-            k += ((spaceSize - 50) / 50 + 1) * fontSize;
+
+            k += ((subtitle.spaceSize - 50) / 50 + 1) * fontSize;
           }
         }
 
@@ -173,45 +223,51 @@ function App() {
   };
 
   const download = async () => {
-    const canvas = document.getElementsByTagName("canvas")[0];
+  if (!selectedCharacter) return;
+  const canvas = document.getElementsByTagName("canvas")[0];
     const link = document.createElement("a");
-    link.download = `${characters[character].name}_gekichumai_sticker_maker.png`;
+    link.download = `${selectedCharacter.name}_gekichumai_sticker_maker.png`;
     link.href = canvas.toDataURL();
     link.style.display = "none";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    await log(characters[character].id, characters[character].name, "download");
+    await log(selectedCharacter.id, selectedCharacter.name, "download");
     setRand(rand + 1);
   };
 
-  function b64toBlob(b64Data, contentType = null, sliceSize = null) {
-    contentType = contentType || "image/png";
-    sliceSize = sliceSize || 512;
+  function b64toBlob(b64Data: string, contentType = "image/png", sliceSize = 512): Blob {
     const byteCharacters = atob(b64Data);
-    const byteArrays = [];
+    const byteArrays: Uint8Array[] = [];
     for (let offset = 0; offset < byteCharacters.length; offset += sliceSize) {
       const slice = byteCharacters.slice(offset, offset + sliceSize);
-      const byteNumbers = new Array(slice.length);
+      const byteNumbers = new Array<number>(slice.length);
       for (let i = 0; i < slice.length; i++) {
         byteNumbers[i] = slice.charCodeAt(i);
       }
       const byteArray = new Uint8Array(byteNumbers);
       byteArrays.push(byteArray);
     }
-    return new Blob(byteArrays, { type: contentType });
+  const parts = byteArrays.map((u) => u.buffer as unknown as ArrayBuffer);
+  return new Blob(parts, { type: contentType });
   }
 
   const copy = async () => {
     const canvas = document.getElementsByTagName("canvas")[0];
-    await navigator.clipboard.write([
-      new ClipboardItem({
-        "image/png": b64toBlob(canvas.toDataURL().split(",")[1]),
-      }),
-    ]);
+      if (!selectedCharacter) return;
+      await navigator.clipboard.write([
+        new ClipboardItem({
+          "image/png": b64toBlob(canvas.toDataURL().split(",")[1]),
+        }),
+      ]);
     setOpenCopySnackbar(true);
-    await log(characters[character].id, characters[character].name, "copy");
+    await log(selectedCharacter.id, selectedCharacter.name, "copy");
     setRand(rand + 1);
+  };
+
+  const handleSetCategory = (categoryName: string) => {
+    const idx = categories.findIndex((c) => c.name === categoryName);
+    if (idx >= 0) setSelectedCategory(idx);
   };
 
   return (
@@ -226,12 +282,9 @@ function App() {
             <Canvas draw={draw} />
           </div>
           <Slider
-            value={curve ? 256 - position.y + fontSize * 3 : 256 - position.y}
-            onChange={(e, v) =>
-              setPosition({
-                ...position,
-                y: curve ? 256 + fontSize * 3 - v : 256 - v,
-              })
+            value={curve ? 256 - subtitle.y + subtitle.s * 3 : 256 - subtitle.y}
+            onChange={(_e, v) =>
+              setSubtitle(subtitle.update({ y: curve ? 256 + subtitle.s * 3 - (v as number) : 256 - (v as number) }))
             }
             min={0}
             max={256}
@@ -244,8 +297,8 @@ function App() {
         <div className="horizontal">
           <Slider
             className="slider-horizontal"
-            value={position.x}
-            onChange={(e, v) => setPosition({ ...position, x: v })}
+            value={subtitle.x}
+            onChange={(_e, v) => setSubtitle(subtitle.update({ x: v as number }))}
             min={0}
             max={296}
             step={1}
@@ -256,22 +309,22 @@ function App() {
             <div>
               <label>Rotate: </label>
               <Slider
-                value={rotate}
-                onChange={(e, v) => setRotate(v)}
-                min={-10}
-                max={10}
-                step={0.2}
+                value={subtitle.r}
+                onChange={(_e, v) => setSubtitle(subtitle.update({ r: v as number }))}
+                min={-31.5}
+                max={31.5}
+                step={0.1}
                 track={false}
                 color="secondary"
               />
             </div>
             <div>
               <label>
-                <nobr>Font size: </nobr>
+                <span style={{ whiteSpace: "nowrap" }}>Font size: </span>
               </label>
               <Slider
-                value={fontSize}
-                onChange={(e, v) => setFontSize(v)}
+                value={subtitle.s}
+                onChange={(_e, v) => setSubtitle(subtitle.update({ s: v as number }))}
                 min={10}
                 max={100}
                 step={1}
@@ -281,11 +334,11 @@ function App() {
             </div>
             <div>
               <label>
-                <nobr>Spacing: </nobr>
+                <span style={{ whiteSpace: "nowrap" }}>Spacing: </span>
               </label>
               <Slider
-                value={spaceSize}
-                onChange={(e, v) => setSpaceSize(v)}
+                value={subtitle.spaceSize}
+                onChange={(_e, v) => setSubtitle(subtitle.update({ spaceSize: v as number }))}
                 min={0}
                 max={100}
                 step={1}
@@ -307,14 +360,14 @@ function App() {
               label="Text"
               size="small"
               color="secondary"
-              value={text}
+              value={subtitle.text}
               multiline={true}
               fullWidth
-              onChange={(e) => setText(e.target.value)}
+              onChange={(e) => setSubtitle(subtitle.update({ text: e.target.value }))}
             />
           </div>
           <div className="picker">
-            <Picker setCharacter={setCharacter} />
+            <Picker setCharacter={setSelectedCharacter} setCategory={handleSetCategory} />
           </div>
           <div className="buttons">
             <Button color="secondary" onClick={copy}>

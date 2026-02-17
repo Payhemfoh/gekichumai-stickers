@@ -4,15 +4,27 @@ import {
   Popover,
   Button,
   TextField,
+  Select,
+  MenuItem,
 } from "@mui/material";
-import { useState, useMemo } from "react";
-import characters from "../characters.json";
+import React, { useState, useMemo } from "react";
+import { categories } from "../utils/preload";
+import type { Category } from "../models/Category";
+import type { Character } from "../models/Character";
 
-export default function Picker({ setCharacter }) {
-  const [anchorEl, setAnchorEl] = useState(null);
+interface PickerProps {
+  setCharacter: (index: number) => void;
+  setCategory: (category: string) => void;
+}
+
+export default function Picker({ setCharacter, setCategory }: PickerProps) {
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [search, setSearch] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState(
+    categories && categories.length > 0 ? categories[0].name : ""
+  ); // default first category
 
-  const handleClick = (event) => {
+  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
   };
 
@@ -23,11 +35,14 @@ export default function Picker({ setCharacter }) {
   const open = Boolean(anchorEl);
   const id = open ? "picker" : undefined;
 
-  // Memoize the filtered image list items to avoid recomputing them
-  // at every render
+  // Filter characters by category + search
   const memoizedImageListItems = useMemo(() => {
     const s = search.toLowerCase();
-    return characters.map((c, index) => {
+
+  // Find the selected category object
+  const categoryObj: Category | undefined = categories.find((c) => c.name === selectedCategory);
+    if (!categoryObj) return [];
+  return categoryObj.characters.map((c: Character, index: number) => {
       if (
         s === c.id ||
         c.name.toLowerCase().includes(s) ||
@@ -35,24 +50,21 @@ export default function Picker({ setCharacter }) {
       ) {
         return (
           <ImageListItem
-            key={index}
+            key={c.id || index}
             onClick={() => {
               handleClose();
               setCharacter(index);
+              setCategory(selectedCategory); // update parent with chosen category
             }}
             sx={{
               cursor: "pointer",
-              "&:hover": {
-                opacity: 0.5,
-              },
-              "&:active": {
-                opacity: 0.8,
-              },
+              "&:hover": { opacity: 0.5 },
+              "&:active": { opacity: 0.8 },
             }}
           >
             <img
-              src={`/img/${c.img}`}
-              srcSet={`/img/${c.img}`}
+              src={`/img/${c.imgPath}`}
+              srcSet={`/img/${c.imgPath}`}
               alt={c.name}
               loading="lazy"
             />
@@ -61,7 +73,7 @@ export default function Picker({ setCharacter }) {
       }
       return null;
     });
-  }, [search, setCharacter]);
+  }, [search, selectedCategory, setCharacter, setCategory]);
 
   return (
     <div>
@@ -78,10 +90,7 @@ export default function Picker({ setCharacter }) {
         open={open}
         anchorEl={anchorEl}
         onClose={handleClose}
-        anchorOrigin={{
-          vertical: "bottom",
-          horizontal: "left",
-        }}
+        anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
         className="modal"
       >
         <div className="picker-search">
@@ -90,11 +99,26 @@ export default function Picker({ setCharacter }) {
             size="small"
             color="secondary"
             value={search}
-            multiline={true}
             fullWidth
             onChange={(e) => setSearch(e.target.value)}
           />
         </div>
+
+        {/* Category dropdown */}
+        <div className="picker-category">
+          <Select
+            value={selectedCategory}
+            onChange={(e) => setSelectedCategory(e.target.value as string)}
+            fullWidth
+          >
+            {categories.map((cat, idx) => (
+              <MenuItem key={idx} value={cat.name}>
+                {cat.name}
+              </MenuItem>
+            ))}
+          </Select>
+        </div>
+
         <div className="image-grid-wrapper">
           <ImageList
             sx={{
