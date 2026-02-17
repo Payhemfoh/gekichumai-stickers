@@ -5,7 +5,7 @@ const path = require('path');
 const crypto = require('crypto');
 
 const app = express();
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 8080;
 const LOG_FILE = path.join(__dirname, 'logs.json');
 
 app.use(express.json());
@@ -111,5 +111,5 @@ app.get('/config', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Logging server listening on http://localhost:${PORT}`);
+  console.log(`Logging server listening on port ${PORT}`);
 });
