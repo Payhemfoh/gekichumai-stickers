@@ -6,8 +6,6 @@ export class Character {
         public name: string, 
         public character: string, 
         public imgPath: string, 
-        public fillColor: string, 
-        public strokeColor: string, 
         public defaultParam: SubtitleParameter)
     {}
 }

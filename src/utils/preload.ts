@@ -65,6 +65,8 @@ function preloadCharacters(rawData: CategoryJSON[]): Category[] {
       const dt = ch.defaultText ?? {};
       const subtitle = new SubtitleParameter(
         dt.text ?? "",
+        ch.fillColor ?? "",
+        ch.strokeColor ?? "",
         dt.x ?? 0,
         dt.y ?? 0,
         dt.r ?? 0,
@@ -76,8 +78,6 @@ function preloadCharacters(rawData: CategoryJSON[]): Category[] {
         ch.name,
         ch.character ?? "",
         ch.img ?? "",
-        ch.fillColor ?? "",
-        ch.strokeColor ?? "",
         subtitle
       );
     });

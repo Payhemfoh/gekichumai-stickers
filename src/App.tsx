@@ -8,6 +8,7 @@ import Button from "@mui/material/Button";
 import Switch from "@mui/material/Switch";
 import Snackbar from "@mui/material/Snackbar";
 import Picker from "./components/Picker";
+import ColorPicker from "./components/ColorPicker";
 import Info from "./components/Info";
 import getConfiguration from "./utils/config";
 import log from "./utils/log";
@@ -75,13 +76,15 @@ function App() {
     selectedCharacter
       ? new SubtitleParameter(
           selectedCharacter.defaultParam.text,
+          selectedCharacter.defaultParam.fillColor ?? "black",
+          selectedCharacter.defaultParam.strokeColor ?? "black",
           selectedCharacter.defaultParam.x,
           selectedCharacter.defaultParam.y,
           selectedCharacter.defaultParam.r,
           selectedCharacter.defaultParam.s,
           selectedCharacter.defaultParam.spaceSize ?? 50
         )
-      : new SubtitleParameter("", 0, 0, 0, 16, 50)
+      : new SubtitleParameter("", "black", "black", 0, 0, 0, 16, 50)
   );
 
   // spacing is now part of SubtitleParameter
@@ -152,7 +155,7 @@ function App() {
       ctx.rotate((rotate as number) / 10);
   ctx.textAlign = "center";
   if (!selectedCharacter) return;
-  ctx.fillStyle = selectedCharacter.fillColor ?? "black";
+  ctx.fillStyle = subtitle.fillColor ?? "black";
       const lines = text.split("\n");
       if (curve) {
         ctx.save();
@@ -169,7 +172,7 @@ function App() {
                 ctx.lineWidth = 15;
                 ctx.strokeText(line[i], 0, 0);
                 } else {
-                ctx.strokeStyle = selectedCharacter.strokeColor;
+                ctx.strokeStyle = subtitle.strokeColor;
                 ctx.lineWidth = 5;
                 ctx.strokeText(line[i], 0, 0);
                 ctx.fillText(line[i], 0, 0);
@@ -206,7 +209,7 @@ function App() {
                 ctx.lineWidth = 15;
                 ctx.strokeText(ch, cx, k);
               } else {
-                ctx.strokeStyle = selectedCharacter?.strokeColor ?? "black";
+                ctx.strokeStyle = subtitle?.strokeColor ?? "black";
                 ctx.lineWidth = 5;
                 ctx.strokeText(ch, cx, k);
                 ctx.fillText(ch, cx, k);
@@ -306,6 +309,22 @@ function App() {
             color="secondary"
           />
           <div className="settings">
+            <div>
+              <ColorPicker
+                label="Fill Color"
+                value={subtitle.fillColor ?? "#000000"}
+                onChange={(hex) => setSubtitle(subtitle.update({ fillColor: hex }))}
+                size="small"
+              />
+            </div>
+            <div>
+              <ColorPicker
+                label="Stroke Color"
+                value={subtitle.strokeColor ?? "#000000"}
+                onChange={(hex) => setSubtitle(subtitle.update({ strokeColor: hex }))}
+                size="small"
+              />
+            </div>
             <div>
               <label>Rotate: </label>
               <Slider
