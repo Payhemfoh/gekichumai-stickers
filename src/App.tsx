@@ -391,7 +391,7 @@ function App() {
             }
             
             <div>
-              <label>Curve (Beta): </label>
+              <label>Curve: </label>
               <Switch
                 checked={curve}
                 onChange={(e) => setCurve(e.target.checked)}
