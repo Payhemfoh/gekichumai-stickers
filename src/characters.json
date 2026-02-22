@@ -1556,7 +1556,7 @@
                 "id": "1",
                 "name": "Acid",
                 "character": "acid",
-                "img": "acid/1.jpg",
+                "img": "acid/1.png",
                 "fillColor": "#f0eaee",
                 "strokeColor": "#7e6aab",
                 "defaultText": {
@@ -1572,7 +1572,7 @@
                 "id": "2",
                 "name": "Acid",
                 "character": "acid",
-                "img": "acid/2.jpg",
+                "img": "acid/2.png",
                 "fillColor": "#f0eaee",
                 "strokeColor": "#7e6aab",
                 "defaultText": {
@@ -1588,7 +1588,7 @@
                 "id": "3",
                 "name": "Acid",
                 "character": "acid",
-                "img": "acid/3.jpg",
+                "img": "acid/3.png",
                 "fillColor": "#f0eaee",
                 "strokeColor": "#7e6aab",
                 "defaultText": {
@@ -1604,7 +1604,7 @@
                 "id": "4",
                 "name": "Acid",
                 "character": "acid",
-                "img": "acid/4.jpg",
+                "img": "acid/4.png",
                 "fillColor": "#f0eaee",
                 "strokeColor": "#7e6aab",
                 "defaultText": {
@@ -1620,7 +1620,7 @@
                 "id": "5",
                 "name": "Acid",
                 "character": "acid",
-                "img": "acid/5.jpg",
+                "img": "acid/5.png",
                 "fillColor": "#f0eaee",
                 "strokeColor": "#7e6aab",
                 "defaultText": {
@@ -1636,7 +1636,7 @@
                 "id": "6",
                 "name": "Acid",
                 "character": "acid",
-                "img": "acid/6.jpg",
+                "img": "acid/6.png",
                 "fillColor": "#f0eaee",
                 "strokeColor": "#7e6aab",
                 "defaultText": {
@@ -1652,7 +1652,7 @@
                 "id": "7",
                 "name": "Acid",
                 "character": "acid",
-                "img": "acid/7.jpg",
+                "img": "acid/7.png",
                 "fillColor": "#f0eaee",
                 "strokeColor": "#7e6aab",
                 "defaultText": {
@@ -1668,7 +1668,7 @@
                 "id": "8",
                 "name": "Acid",
                 "character": "acid",
-                "img": "acid/8.jpg",
+                "img": "acid/8.png",
                 "fillColor": "#f0eaee",
                 "strokeColor": "#7e6aab",
                 "defaultText": {
@@ -1684,7 +1684,7 @@
                 "id": "9",
                 "name": "Acid",
                 "character": "acid",
-                "img": "acid/9.jpg",
+                "img": "acid/9.png",
                 "fillColor": "#f0eaee",
                 "strokeColor": "#7e6aab",
                 "defaultText": {
@@ -1700,7 +1700,7 @@
                 "id": "10",
                 "name": "Acid",
                 "character": "acid",
-                "img": "acid/10.jpg",
+                "img": "acid/10.png",
                 "fillColor": "#f0eaee",
                 "strokeColor": "#7e6aab",
                 "defaultText": {
@@ -1716,7 +1716,7 @@
                 "id": "11",
                 "name": "Acid",
                 "character": "acid",
-                "img": "acid/11.jpg",
+                "img": "acid/11.png",
                 "fillColor": "#f0eaee",
                 "strokeColor": "#7e6aab",
                 "defaultText": {
@@ -1732,7 +1732,7 @@
                 "id": "12",
                 "name": "Acid",
                 "character": "acid",
-                "img": "acid/12.jpg",
+                "img": "acid/12.png",
                 "fillColor": "#f0eaee",
                 "strokeColor": "#7e6aab",
                 "defaultText": {
@@ -1748,7 +1748,7 @@
                 "id": "13",
                 "name": "Acid",
                 "character": "acid",
-                "img": "acid/13.jpg",
+                "img": "acid/13.png",
                 "fillColor": "#f0eaee",
                 "strokeColor": "#7e6aab",
                 "defaultText": {
@@ -1764,7 +1764,7 @@
                 "id": "14",
                 "name": "Acid",
                 "character": "acid",
-                "img": "acid/14.jpg",
+                "img": "acid/14.png",
                 "fillColor": "#f0eaee",
                 "strokeColor": "#7e6aab",
                 "defaultText": {
@@ -1780,7 +1780,7 @@
                 "id": "15",
                 "name": "Acid",
                 "character": "acid",
-                "img": "acid/15.jpg",
+                "img": "acid/15.png",
                 "fillColor": "#f0eaee",
                 "strokeColor": "#7e6aab",
                 "defaultText": {
@@ -1796,7 +1796,7 @@
                 "id": "16",
                 "name": "Acid",
                 "character": "acid",
-                "img": "acid/16.jpg",
+                "img": "acid/16.png",
                 "fillColor": "#f0eaee",
                 "strokeColor": "#7e6aab",
                 "defaultText": {
@@ -1812,7 +1812,7 @@
                 "id": "17",
                 "name": "Acid",
                 "character": "acid",
-                "img": "acid/17.jpg",
+                "img": "acid/17.png",
                 "fillColor": "#f0eaee",
                 "strokeColor": "#7e6aab",
                 "defaultText": {
@@ -1828,7 +1828,7 @@
                 "id": "18",
                 "name": "Acid",
                 "character": "acid",
-                "img": "acid/18.jpg",
+                "img": "acid/18.png",
                 "fillColor": "#f0eaee",
                 "strokeColor": "#7e6aab",
                 "defaultText": {
@@ -1844,7 +1844,7 @@
                 "id": "19",
                 "name": "Acid",
                 "character": "acid",
-                "img": "acid/19.jpg",
+                "img": "acid/19.png",
                 "fillColor": "#f0eaee",
                 "strokeColor": "#7e6aab",
                 "defaultText": {
@@ -1860,7 +1860,332 @@
                 "id": "20",
                 "name": "Acid",
                 "character": "acid",
-                "img": "acid/20.jpg",
+                "img": "acid/20.png",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            }
+        ]
+    },
+    {
+        "category": "Mika by AlicitruSalt",
+        "characters": [
+            {
+                "id": "1",
+                "name": "Mika",
+                "character": "mika",
+                "img": "mika/1.png",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "2",
+                "name": "Mika",
+                "character": "mika",
+                "img": "mika/2.png",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "3",
+                "name": "Mika",
+                "character": "mika",
+                "img": "mika/3.png",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "4",
+                "name": "Mika",
+                "character": "mika",
+                "img": "mika/4.png",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "5",
+                "name": "Mika",
+                "character": "mika",
+                "img": "mika/5.png",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "6",
+                "name": "Mika",
+                "character": "mika",
+                "img": "mika/6.png",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "7",
+                "name": "Mika",
+                "character": "mika",
+                "img": "mika/7.png",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "8",
+                "name": "Mika",
+                "character": "mika",
+                "img": "mika/8.png",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "9",
+                "name": "Mika",
+                "character": "mika",
+                "img": "mika/9.png",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "10",
+                "name": "Mika",
+                "character": "mika",
+                "img": "mika/10.png",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "11",
+                "name": "Mika",
+                "character": "mika",
+                "img": "mika/11.png",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "12",
+                "name": "Mika",
+                "character": "mika",
+                "img": "mika/12.png",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "13",
+                "name": "Mika",
+                "character": "mika",
+                "img": "mika/13.png",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "14",
+                "name": "Mika",
+                "character": "mika",
+                "img": "mika/14.png",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "15",
+                "name": "Mika",
+                "character": "mika",
+                "img": "mika/15.png",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "16",
+                "name": "Mika",
+                "character": "mika",
+                "img": "mika/16.png",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "17",
+                "name": "Mika",
+                "character": "mika",
+                "img": "mika/17.png",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "18",
+                "name": "Mika",
+                "character": "mika",
+                "img": "mika/18.png",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "19",
+                "name": "Mika",
+                "character": "mika",
+                "img": "mika/19.png",
+                "fillColor": "#f0eaee",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "20",
+                "name": "Mika",
+                "character": "mika",
+                "img": "mika/20.png",
                 "fillColor": "#f0eaee",
                 "strokeColor": "#7e6aab",
                 "defaultText": {
