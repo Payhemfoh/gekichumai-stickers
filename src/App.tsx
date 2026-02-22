@@ -89,6 +89,7 @@ function App() {
 
   // spacing is now part of SubtitleParameter
   const [curve, setCurve] = useState<boolean>(false);
+  const [curveTightness, setCurveTightness] = useState<number>(1);
   const [loaded, setLoaded] = useState<boolean>(false);
   const imgRef = useRef<HTMLImageElement>(new Image());
 
@@ -160,18 +161,23 @@ function App() {
       if (curve) {
         ctx.save();
         for (let line of lines) {
+          // spacingFactor >1 increases spacing, <1 reduces it
+          const spacingFactor = ((subtitle.spaceSize - 50) / 50 + 1);
           const lineAngle = (Math.PI * line.length) / 7;
+          // angular step per character, adjusted by spacingFactor and curveTightness
+          const anglePerChar = (lineAngle / Math.max(1, line.length)) * curveTightness;
           for (let pass = 0; pass < 2; pass++) {
             ctx.save();
             for (let i = 0; i < line.length; i++) {
-              ctx.rotate(lineAngle / line.length / 2.2);
+              // rotate by the adjusted angular step
+              ctx.rotate(anglePerChar / 2.2);
               ctx.save();
-              ctx.translate(0, -1 * fontSize * 3.5);
+              ctx.translate(0, -1 * fontSize * 3.5 * spacingFactor);
               if (pass === 0) {
                 ctx.strokeStyle = "white";
                 ctx.lineWidth = 15;
                 ctx.strokeText(line[i], 0, 0);
-                } else {
+              } else {
                 ctx.strokeStyle = subtitle.strokeColor;
                 ctx.lineWidth = 5;
                 ctx.strokeText(line[i], 0, 0);
@@ -181,7 +187,8 @@ function App() {
             }
             ctx.restore();
           }
-            ctx.translate(0, ((subtitle.spaceSize - 50) / 50 + 1) * fontSize);
+          // translate down between lines, scaled by spacingFactor
+          ctx.translate(0, spacingFactor * fontSize);
         }
         ctx.restore();
       } else {
@@ -365,6 +372,24 @@ function App() {
                 color="secondary"
               />
             </div>
+            {
+              curve ?
+                <div>
+                  <label>
+                    <span style={{ whiteSpace: "nowrap" }}>Curve tightness: </span>
+                  </label>
+                  <Slider
+                    value={curveTightness}
+                    onChange={(_e, v) => setCurveTightness(v as number)}
+                    min={0.2}
+                    max={3.5}
+                    step={0.05}
+                    track={false}
+                    color="secondary"
+                  />
+                </div> : null
+            }
+            
             <div>
               <label>Curve (Beta): </label>
               <Switch
