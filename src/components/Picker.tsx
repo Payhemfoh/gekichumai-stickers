@@ -63,10 +63,11 @@ export default function Picker({ setCharacter, setCategory }: PickerProps) {
             }}
           >
             <img
+              key={`/img/${c.imgPath}`}
               src={`/img/${c.imgPath}`}
               srcSet={`/img/${c.imgPath}`}
               alt={c.name}
-              loading="eager"
+              loading="lazy"
             />
           </ImageListItem>
         );
