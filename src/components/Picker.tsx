@@ -66,7 +66,7 @@ export default function Picker({ setCharacter, setCategory }: PickerProps) {
               src={`/img/${c.imgPath}`}
               srcSet={`/img/${c.imgPath}`}
               alt={c.name}
-              loading="lazy"
+              loading="eager"
             />
           </ImageListItem>
         );
