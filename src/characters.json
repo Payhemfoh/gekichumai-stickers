@@ -6,7 +6,7 @@
                 "id": "1",
                 "name": "Akari",
                 "character": "akari",
-                "img": "ongeki_2/akari.png",
+                "img": "ongeki_2/akari_1.png",
                 "fillColor": "#fccbcd",
                 "strokeColor": "#7c6d68",
                 "defaultText": {
@@ -20,10 +20,10 @@
             },
             {
                 "id": "2",
-                "name": "Yuzu",
-                "character": "yuzu",
-                "img": "ongeki_2/yuzu.png",
-                "fillColor": "#fef7c0",
+                "name": "Akari",
+                "character": "akari",
+                "img": "ongeki_2/akari_2.png",
+                "fillColor": "#fccbcd",
                 "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
@@ -36,10 +36,10 @@
             },
             {
                 "id": "3",
-                "name": "Aoi",
-                "character": "aoi",
-                "img": "ongeki_2/aoi.png",
-                "fillColor": "#88879b",
+                "name": "Akari",
+                "character": "akari",
+                "img": "ongeki_2/akari_3.png",
+                "fillColor": "#fccbcd",
                 "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
@@ -52,10 +52,10 @@
             },
             {
                 "id": "4",
-                "name": "Tsubaki",
-                "character": "tsubaki",
-                "img": "ongeki_2/tsubaki.png",
-                "fillColor": "#7a8489",
+                "name": "Akari",
+                "character": "akari",
+                "img": "ongeki_2/akari_4.png",
+                "fillColor": "#fccbcd",
                 "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
@@ -68,10 +68,10 @@
             },
             {
                 "id": "5",
-                "name": "Rio",
-                "character": "rio",
-                "img": "ongeki_2/rio.png",
-                "fillColor": "#a59cc1",
+                "name": "Akari",
+                "character": "akari",
+                "img": "ongeki_2/akari_5.png",
+                "fillColor": "#fccbcd",
                 "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
@@ -84,10 +84,10 @@
             },
             {
                 "id": "6",
-                "name": "Riku",
-                "character": "riku",
-                "img": "ongeki_2/riku.png",
-                "fillColor": "#ffaabf",
+                "name": "Yuzu",
+                "character": "yuzu",
+                "img": "ongeki_2/yuzu_1.png",
+                "fillColor": "#fef7c0",
                 "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
@@ -100,10 +100,10 @@
             },
             {
                 "id": "7",
-                "name": "Ayaka",
-                "character": "ayaka",
-                "img": "ongeki_2/ayaka.png",
-                "fillColor": "#d5ac9c",
+                "name": "Yuzu",
+                "character": "yuzu",
+                "img": "ongeki_2/yuzu_2.png",
+                "fillColor": "#fef7c0",
                 "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
@@ -116,10 +116,10 @@
             },
             {
                 "id": "8",
-                "name": "Haruna",
-                "character": "haruna",
-                "img": "ongeki_2/haruna.png",
-                "fillColor": "#8d7b77",
+                "name": "Yuzu",
+                "character": "yuzu",
+                "img": "ongeki_2/yuzu_3.png",
+                "fillColor": "#fef7c0",
                 "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
@@ -132,10 +132,10 @@
             },
             {
                 "id": "9",
-                "name": "Saki",
-                "character": "saki",
-                "img": "ongeki_2/saki.png",
-                "fillColor": "#d2dee0",
+                "name": "Aoi",
+                "character": "aoi",
+                "img": "ongeki_2/aoi_1.png",
+                "fillColor": "#88879b",
                 "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
@@ -148,10 +148,10 @@
             },
             {
                 "id": "10",
-                "name": "Koboshi",
-                "character": "koboshi",
-                "img": "ongeki_2/koboshi.png",
-                "fillColor": "#8696a7",
+                "name": "Aoi",
+                "character": "aoi",
+                "img": "ongeki_2/aoi_2.png",
+                "fillColor": "#88879b",
                 "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
@@ -164,10 +164,10 @@
             },
             {
                 "id": "11",
-                "name": "Arisu",
-                "character": "arisu",
-                "img": "ongeki_2/arisu.png",
-                "fillColor": "#9fc5e8",
+                "name": "Aoi",
+                "character": "aoi",
+                "img": "ongeki_2/aoi_3.png",
+                "fillColor": "#88879b",
                 "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
@@ -180,10 +180,10 @@
             },
             {
                 "id": "12",
-                "name": "Akane",
-                "character": "akane",
-                "img": "ongeki_2/akane.png",
-                "fillColor": "#e2666b",
+                "name": "Tsubaki",
+                "character": "tsubaki",
+                "img": "ongeki_2/tsubaki_1.png",
+                "fillColor": "#7a8489",
                 "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
@@ -196,10 +196,10 @@
             },
             {
                 "id": "13",
-                "name": "Kaede",
-                "character": "kaede",
-                "img": "ongeki_2/kaede.png",
-                "fillColor": "#797b7a",
+                "name": "Tsubaki",
+                "character": "tsubaki",
+                "img": "ongeki_2/tsubaki_2.png",
+                "fillColor": "#7a8489",
                 "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
@@ -212,10 +212,10 @@
             },
             {
                 "id": "14",
-                "name": "Mia",
-                "character": "mia",
-                "img": "ongeki_2/mia.png",
-                "fillColor": "#d5d4d4",
+                "name": "Tsubaki",
+                "character": "tsubaki",
+                "img": "ongeki_2/tsubaki_3.png",
+                "fillColor": "#7a8489",
                 "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
@@ -228,10 +228,10 @@
             },
             {
                 "id": "15",
-                "name": "Chinatsu",
-                "character": "chinatsu",
-                "img": "ongeki_2/chinatsu.png",
-                "fillColor": "#d39486",
+                "name": "Rio",
+                "character": "rio",
+                "img": "ongeki_2/rio_1.png",
+                "fillColor": "#a59cc1",
                 "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
@@ -244,10 +244,10 @@
             },
             {
                 "id": "16",
-                "name": "Tsumugi",
-                "character": "tsumugi",
-                "img": "ongeki_2/tsumugi.png",
-                "fillColor": "#775359",
+                "name": "Rio",
+                "character": "rio",
+                "img": "ongeki_2/rio_2.png",
+                "fillColor": "#a59cc1",
                 "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
@@ -260,9 +260,537 @@
             },
             {
                 "id": "17",
+                "name": "Rio",
+                "character": "rio",
+                "img": "ongeki_2/rio_3.png",
+                "fillColor": "#a59cc1",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "18",
+                "name": "Riku",
+                "character": "riku",
+                "img": "ongeki_2/riku_1.png",
+                "fillColor": "#ffaabf",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "19",
+                "name": "Riku",
+                "character": "riku",
+                "img": "ongeki_2/riku_2.png",
+                "fillColor": "#ffaabf",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "20",
+                "name": "Riku",
+                "character": "riku",
+                "img": "ongeki_2/riku_3.png",
+                "fillColor": "#ffaabf",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "21",
+                "name": "Ayaka",
+                "character": "ayaka",
+                "img": "ongeki_2/ayaka_1.png",
+                "fillColor": "#d5ac9c",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "22",
+                "name": "Ayaka",
+                "character": "ayaka",
+                "img": "ongeki_2/ayaka_2.png",
+                "fillColor": "#d5ac9c",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "23",
+                "name": "Haruna",
+                "character": "haruna",
+                "img": "ongeki_2/haruna_1.png",
+                "fillColor": "#8d7b77",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "24",
+                "name": "Haruna",
+                "character": "haruna",
+                "img": "ongeki_2/haruna_2.png",
+                "fillColor": "#8d7b77",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "25",
+                "name": "Haruna",
+                "character": "haruna",
+                "img": "ongeki_2/haruna_2.png",
+                "fillColor": "#8d7b77",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "26",
+                "name": "Saki",
+                "character": "saki",
+                "img": "ongeki_2/saki_1.png",
+                "fillColor": "#d2dee0",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "27",
+                "name": "Saki",
+                "character": "saki",
+                "img": "ongeki_2/saki_2.png",
+                "fillColor": "#d2dee0",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "28",
+                "name": "Koboshi",
+                "character": "koboshi",
+                "img": "ongeki_2/koboshi_1.png",
+                "fillColor": "#8696a7",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "29",
+                "name": "Koboshi",
+                "character": "koboshi",
+                "img": "ongeki_2/koboshi_2.png",
+                "fillColor": "#8696a7",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "30",
+                "name": "Arisu",
+                "character": "arisu",
+                "img": "ongeki_2/arisu_1.png",
+                "fillColor": "#9fc5e8",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "31",
+                "name": "Arisu",
+                "character": "arisu",
+                "img": "ongeki_2/arisu_2.png",
+                "fillColor": "#9fc5e8",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "32",
+                "name": "Arisu",
+                "character": "arisu",
+                "img": "ongeki_2/arisu_3.png",
+                "fillColor": "#9fc5e8",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "33",
+                "name": "Arisu",
+                "character": "arisu",
+                "img": "ongeki_2/arisu_4.png",
+                "fillColor": "#9fc5e8",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "34",
+                "name": "Akane",
+                "character": "akane",
+                "img": "ongeki_2/akane_1.png",
+                "fillColor": "#e2666b",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "35",
+                "name": "Akane",
+                "character": "akane",
+                "img": "ongeki_2/akane_2.png",
+                "fillColor": "#e2666b",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "36",
+                "name": "Kaede",
+                "character": "kaede",
+                "img": "ongeki_2/kaede_1.png",
+                "fillColor": "#797b7a",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "37",
+                "name": "Kaede",
+                "character": "kaede",
+                "img": "ongeki_2/kaede_2.png",
+                "fillColor": "#797b7a",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "38",
+                "name": "Kaede",
+                "character": "kaede",
+                "img": "ongeki_2/kaede_3.png",
+                "fillColor": "#797b7a",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "39",
+                "name": "Mia",
+                "character": "mia",
+                "img": "ongeki_2/mia_1.png",
+                "fillColor": "#d5d4d4",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "40",
+                "name": "Mia",
+                "character": "mia",
+                "img": "ongeki_2/mia_2.png",
+                "fillColor": "#d5d4d4",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "41",
+                "name": "Chinatsu",
+                "character": "chinatsu",
+                "img": "ongeki_2/chinatsu_1.png",
+                "fillColor": "#d39486",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "42",
+                "name": "Chinatsu",
+                "character": "chinatsu",
+                "img": "ongeki_2/chinatsu_2.png",
+                "fillColor": "#d39486",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "43",
+                "name": "Chinatsu",
+                "character": "chinatsu",
+                "img": "ongeki_2/chinatsu_3.png",
+                "fillColor": "#d39486",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "44",
+                "name": "Tsumugi",
+                "character": "tsumugi",
+                "img": "ongeki_2/tsumugi_1.png",
+                "fillColor": "#775359",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "45",
+                "name": "Tsumugi",
+                "character": "tsumugi",
+                "img": "ongeki_2/tsumugi_2.png",
+                "fillColor": "#775359",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "46",
+                "name": "Tsumugi",
+                "character": "tsumugi",
+                "img": "ongeki_2/tsumugi_3.png",
+                "fillColor": "#775359",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "47",
+                "name": "Tsumugi",
+                "character": "tsumugi",
+                "img": "ongeki_2/tsumugi_4.png",
+                "fillColor": "#775359",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "48",
                 "name": "Setsuna",
                 "character": "setsuna",
-                "img": "ongeki_2/setsuna.png",
+                "img": "ongeki_2/setsuna_1.png",
+                "fillColor": "#cdbeff",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "49",
+                "name": "Setsuna",
+                "character": "setsuna",
+                "img": "ongeki_2/setsuna_2.png",
+                "fillColor": "#cdbeff",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "50",
+                "name": "Setsuna",
+                "character": "setsuna",
+                "img": "ongeki_2/setsuna_3.png",
                 "fillColor": "#cdbeff",
                 "strokeColor": "#7c6d68",
                 "defaultText": {
@@ -477,6 +1005,278 @@
                 "character": "tsubaki",
                 "img": "ongeki/13.png",
                 "fillColor": "#7a8489",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "14",
+                "name": "Akari",
+                "character": "akari",
+                "img": "ongeki/14.png",
+                "fillColor": "#fccbcd",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "15",
+                "name": "Yuzu",
+                "character": "yuzu",
+                "img": "ongeki/15.png",
+                "fillColor": "#fef7c0",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 245,
+                    "r": 0,
+                    "s": 30,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "16",
+                "name": "Aoi",
+                "character": "aoi",
+                "img": "ongeki/16.png",
+                "fillColor": "#88879b",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "17",
+                "name": "Rio",
+                "character": "Rio",
+                "img": "ongeki/17.png",
+                "fillColor": "#a59cc1",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "18",
+                "name": "Riku",
+                "character": "riku",
+                "img": "ongeki/18.png",
+                "fillColor": "#ffaabf",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "19",
+                "name": "Tsubaki",
+                "character": "tsubaki",
+                "img": "ongeki/19.png",
+                "fillColor": "#7a8489",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "20",
+                "name": "Ayaka",
+                "character": "ayaka",
+                "img": "ongeki/20.png",
+                "fillColor": "#d5ac9c",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "21",
+                "name": "Haruna",
+                "character": "haruna",
+                "img": "ongeki/21.png",
+                "fillColor": "#8d7b77",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "22",
+                "name": "Saki",
+                "character": "saki",
+                "img": "ongeki/22.png",
+                "fillColor": "#d2dee0",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "23",
+                "name": "Koboshi",
+                "character": "koboshi",
+                "img": "ongeki/23.png",
+                "fillColor": "#8696a7",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "24",
+                "name": "Akane",
+                "character": "akane",
+                "img": "ongeki/24.png",
+                "fillColor": "#e2666b",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "25",
+                "name": "Arisu",
+                "character": "arisu",
+                "img": "ongeki/25.png",
+                "fillColor": "#9fc5e8",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "26",
+                "name": "Kaede",
+                "character": "kaede",
+                "img": "ongeki/26.png",
+                "fillColor": "#797b7a",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "27",
+                "name": "Chinatsu",
+                "character": "chinatsu",
+                "img": "ongeki/27.png",
+                "fillColor": "#d39486",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "28",
+                "name": "Mia",
+                "character": "mia",
+                "img": "ongeki/28.png",
+                "fillColor": "#d5d4d4",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "29",
+                "name": "Tsumugi",
+                "character": "tsumugi",
+                "img": "ongeki/29.png",
+                "fillColor": "#775359",
+                "strokeColor": "#7c6d68",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "30",
+                "name": "Setsuna",
+                "character": "setsuna",
+                "img": "ongeki/30.png",
+                "fillColor": "#cdbeff",
                 "strokeColor": "#7c6d68",
                 "defaultText": {
                     "text": "something",
@@ -1176,9 +1976,665 @@
         "characters": [
             {
                 "id": "1",
+                "name": "Chiffon",
+                "character": "chiffon",
+                "img": "maimai/chiffon_1.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "2",
+                "name": "Chiffon",
+                "character": "chiffon",
+                "img": "maimai/chiffon_2.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "3",
+                "name": "Chiffon",
+                "character": "chiffon",
+                "img": "maimai/chiffon_3.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "4",
+                "name": "Chiffon",
+                "character": "chiffon",
+                "img": "maimai/chiffon_4.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "5",
+                "name": "Chiffon",
+                "character": "chiffon",
+                "img": "maimai/chiffon_5.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "6",
+                "name": "Milk",
+                "character": "milk",
+                "img": "maimai/milk_1.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "7",
+                "name": "Milk",
+                "character": "milk",
+                "img": "maimai/milk_2.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "8",
+                "name": "Milk",
+                "character": "milk",
+                "img": "maimai/milk_3.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "9",
+                "name": "Milk",
+                "character": "milk",
+                "img": "maimai/milk_4.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "10",
+                "name": "Milk",
+                "character": "milk",
+                "img": "maimai/milk_5.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "11",
+                "name": "Milk",
+                "character": "milk",
+                "img": "maimai/milk_6.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "12",
+                "name": "Milk",
+                "character": "milk",
+                "img": "maimai/milk_7.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "13",
+                "name": "Milk",
+                "character": "milk",
+                "img": "maimai/milk_8.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "14",
+                "name": "Milk",
+                "character": "milk",
+                "img": "maimai/milk_9.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "15",
+                "name": "Milk",
+                "character": "milk",
+                "img": "maimai/milk_10.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "16",
+                "name": "Otohime",
+                "character": "otohime",
+                "img": "maimai/otohime_1.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "17",
+                "name": "Otohime",
+                "character": "otohime",
+                "img": "maimai/otohime_2.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "18",
+                "name": "Otohime",
+                "character": "otohime",
+                "img": "maimai/otohime_3.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "19",
+                "name": "Otohime",
+                "character": "otohime",
+                "img": "maimai/otohime_4.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "20",
+                "name": "Otohime",
+                "character": "otohime",
+                "img": "maimai/otohime_5.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "21",
+                "name": "Otohime",
+                "character": "otohime",
+                "img": "maimai/otohime_6.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "22",
+                "name": "Ras",
+                "character": "ras",
+                "img": "maimai/ras_1.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "23",
+                "name": "Ras",
+                "character": "ras",
+                "img": "maimai/ras_2.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "24",
+                "name": "Ras",
+                "character": "ras",
+                "img": "maimai/ras_3.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "25",
+                "name": "Ras",
+                "character": "ras",
+                "img": "maimai/ras_4.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "26",
+                "name": "Ras",
+                "character": "ras",
+                "img": "maimai/ras_5.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "27",
+                "name": "Ras",
+                "character": "ras",
+                "img": "maimai/ras_6.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "28",
+                "name": "Ras",
+                "character": "ras",
+                "img": "maimai/ras_7.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "29",
                 "name": "Salt",
                 "character": "salt",
-                "img": "salt/3.png",
+                "img": "maimai/salt_1.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "30",
+                "name": "Salt",
+                "character": "salt",
+                "img": "maimai/salt_2.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "31",
+                "name": "Salt",
+                "character": "salt",
+                "img": "maimai/salt_3.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "32",
+                "name": "Salt",
+                "character": "salt",
+                "img": "maimai/salt_4.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "33",
+                "name": "Salt",
+                "character": "salt",
+                "img": "maimai/salt_5.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "34",
+                "name": "Salt",
+                "character": "salt",
+                "img": "maimai/salt_6.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "35",
+                "name": "Shama",
+                "character": "shama",
+                "img": "maimai/shama_1.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "36",
+                "name": "Shama",
+                "character": "shama",
+                "img": "maimai/shama_2.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "37",
+                "name": "Shama",
+                "character": "shama",
+                "img": "maimai/shama_3.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "38",
+                "name": "Shama",
+                "character": "shama",
+                "img": "maimai/shama_4.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "39",
+                "name": "Shama",
+                "character": "shama",
+                "img": "maimai/shama_5.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "40",
+                "name": "Shama",
+                "character": "shama",
+                "img": "maimai/shama_6.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "41",
+                "name": "Shama",
+                "character": "shama",
+                "img": "maimai/shama_7.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "42",
+                "name": "Shama",
+                "character": "shama",
+                "img": "maimai/shama_8.png",
                 "fillColor": "#e9d7fd",
                 "strokeColor": "#7e6aab",
                 "defaultText": {
