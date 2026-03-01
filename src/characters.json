@@ -1955,9 +1955,569 @@
         "characters": [
             {
                 "id": "1",
-                "name": "Salt",
-                "character": "salt",
-                "img": "salt/1.png",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/1.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "2",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/2.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "3",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/3.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "4",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/4.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "5",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/5.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "6",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/6.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "7",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/7.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "8",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/8.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "9",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/9.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "10",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/10.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "11",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/11.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "12",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/12.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "13",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/13.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "14",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/14.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "15",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/15.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "16",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/16.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "17",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/17.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "18",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/18.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "19",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/19.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "20",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/20.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "21",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/21.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "22",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/22.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "23",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/23.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "24",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/24.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "25",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/25.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "26",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/26.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "27",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/27.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "28",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/28.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "29",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/29.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "30",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/30.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "31",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/31.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "32",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/32.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "33",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/33.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "34",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/34.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "35",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/35.png",
+                "fillColor": "#e9d7fd",
+                "strokeColor": "#7e6aab",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "36",
+                "name": "Chunithm",
+                "character": "chunithm",
+                "img": "chunithm/36.png",
                 "fillColor": "#e9d7fd",
                 "strokeColor": "#7e6aab",
                 "defaultText": {
