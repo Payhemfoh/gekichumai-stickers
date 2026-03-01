@@ -3802,22 +3802,6 @@
                     "s": 42,
                     "spaceSize": 50
                 }
-            },
-            {
-                "id": "33",
-                "name": "Derakkuma",
-                "character": "derakkuma",
-                "img": "maimai_derakkuma/derakkuma_20.png",
-                "fillColor": "#fee8a0",
-                "strokeColor": "#bde533",
-                "defaultText": {
-                    "text": "something",
-                    "x": 148,
-                    "y": 58,
-                    "r": -2,
-                    "s": 42,
-                    "spaceSize": 50
-                }
             }
         ]
     },
