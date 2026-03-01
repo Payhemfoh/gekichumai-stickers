@@ -3986,9 +3986,9 @@
             },
             {
                 "id": "12",
-                "name": "Lichkeit",
-                "character": "lichkeit",
-                "img": "maimai_7sref_chiho/lichkeit_1.png",
+                "name": "Lichtkeit",
+                "character": "lichtkeit",
+                "img": "maimai_7sref_chiho/lichtkeit_1.png",
                 "fillColor": "#fee8a0",
                 "strokeColor": "#bde533",
                 "defaultText": {
