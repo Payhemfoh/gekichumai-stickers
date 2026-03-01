@@ -4099,6 +4099,651 @@
         ]
     },
     {
+        "category": "MaiMai Tenkai Chiho",
+        "characters":[
+            {
+                "id": "1",
+                "name": "Mika",
+                "character": "mika",
+                "img": "maimai_tenkai_chiho/mika_1.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "2",
+                "name": "Mika",
+                "character": "mika",
+                "img": "maimai_tenkai_chiho/mika_2.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "3",
+                "name": "Mika",
+                "character": "mika",
+                "img": "maimai_tenkai_chiho/mika_3.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "4",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/4.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "5",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/5.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "6",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/6.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "7",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/7.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "8",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/8.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "9",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/9.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "10",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/10.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "11",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/11.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "12",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/12.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "13",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/13.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "14",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/14.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "15",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/15.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "16",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/16.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "17",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/17.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "18",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/18.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "19",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/19.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "20",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/20.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "21",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/21.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "22",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/22.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "23",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/23.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "24",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/24.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "25",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/25.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "26",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/26.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "27",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/27.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "28",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/28.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "29",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/29.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "30",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/30.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "31",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/31.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "32",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/32.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "33",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/33.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "34",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/34.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "35",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/35.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "36",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/36.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "37",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/37.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "38",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/38.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "39",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/39.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            },
+            {
+                "id": "40",
+                "name": "Tenkai Chiho",
+                "character": "tenkai_chiho",
+                "img": "maimai_tenkai_chiho/40.png",
+                "fillColor": "#fee8a0",
+                "strokeColor": "#bde533",
+                "defaultText": {
+                    "text": "something",
+                    "x": 148,
+                    "y": 58,
+                    "r": -2,
+                    "s": 42,
+                    "spaceSize": 50
+                }
+            }
+        ]
+    },
+    {
         "category": "Salt by AlicitruSalt",
         "characters": [
             {
