@@ -5,6 +5,7 @@ const path = require('path');
 const crypto = require('crypto');
 
 const app = express();
+app.set('trust proxy', true);
 const PORT = process.env.PORT || 8080;
 const LOG_FILE = path.join(__dirname, 'logs.json');
 
