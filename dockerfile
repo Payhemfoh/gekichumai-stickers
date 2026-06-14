@@ -1,13 +1,13 @@
 # =========================================================
-# STAGE 1: Build the React Frontend (Heavy tools allowed)
+# STAGE 1: Build the React Frontend (Sequential Throttling)
 # =========================================================
 FROM node:18-alpine AS frontend-builder
 WORKDIR /app
 COPY package*.json ./
-# Use the legacy peer deps flag you need, but skip documentation/caches
-RUN npm install --legacy-peer-deps
+RUN npm install --legacy-peer-deps --no-audit --progress=false
 COPY . .
 RUN npm run build
+# Sequential execution anchor to protect server memory
 RUN touch /app/frontend-done.txt
 
 # =========================================================
@@ -15,32 +15,31 @@ RUN touch /app/frontend-done.txt
 # =========================================================
 FROM node:18-alpine AS backend-builder
 WORKDIR /app
-
+# Wait for Stage 1 to complete before pulling packages
 COPY --from=frontend-builder /app/frontend-done.txt ./
-
 COPY package*.json ./
-# Strictly install production dependencies only (ignores devDependencies)
-RUN npm edit-production-deps || npm json-minify || true 
 RUN npm ci --only=production --legacy-peer-deps
 
 # =========================================================
-# STAGE 3: The Final Lightweight, Distroless Runtime
+# STAGE 3: The Final Alpine Runtime (Clean & Transparent)
 # =========================================================
-FROM gcr.io/distroless/nodejs18-debian12
+FROM node:18-alpine
 WORKDIR /app
 
-# Copy production backend dependencies from Stage 2
+# 1. Bring in production dependencies
 COPY --from=backend-builder /app/node_modules ./node_modules
 COPY --from=backend-builder /app/package*.json ./
 
-# Copy only the compiled source code files needed to run the server
+# 2. Bring in the server source directory structure
 COPY server/ ./server/
 
-# Copy the compiled static React build from Stage 1
+# 3. Bring in the compiled React frontend static assets
 COPY --from=frontend-builder /app/build ./build
 
-# Expose only the backend port (Nginx handles port 80 externally via Compose)
+# Set runtime environment flags
+ENV NODE_ENV=production
+ENV PORT=8080
 EXPOSE 8080
 
-# Run the Node application directly without a shell interpreter
+# Alpine has a native shell environment, so standard shortcuts resolve perfectly
 CMD ["node", "server/index.js"]

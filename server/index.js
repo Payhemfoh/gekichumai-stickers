@@ -1,26 +1,33 @@
-// Minimal logging server for development
+// Production logging server and static asset distributor
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 
 const app = express();
+
+// Required so Express correctly extracts client IPs forwarded by Nginx
 app.set('trust proxy', true);
+
 const PORT = process.env.PORT || 8080;
 const LOG_FILE = path.join(__dirname, 'logs.json');
 
+// Path where the multi-stage Dockerfile drops the built React files
+const BUILD_PATH = path.join(__dirname, '../build'); 
+
 app.use(express.json());
-// Allow CORS from localhost development hosts
-// Restrict CORS to allowed origins. For local development we allow localhost:3000 as well.
+
+// Strict Production CORS definitions
 const allowedOrigins = [
   'https://www.yafumin-webapp.ddnsfree.com',
+  'https://yafumin-webapp.ddnsfree.com',
   'http://localhost:3000',
   'http://127.0.0.1:3000'
 ];
+
 app.use((req, res, next) => {
   const origin = req.header('origin');
   if (origin && allowedOrigins.includes(origin)) {
-    // echo back the allowed origin (do not use '*')
     res.setHeader('Access-Control-Allow-Origin', origin);
   }
   res.setHeader('Access-Control-Allow-Methods', 'GET,POST,OPTIONS');
@@ -46,16 +53,18 @@ function writeLogs(logs) {
   fs.writeFileSync(LOG_FILE, JSON.stringify(logs, null, 2), 'utf8');
 }
 
+// =========================================================
+// API ENDPOINTS
+// =========================================================
+
 app.post('/log', (req, res) => {
   const { id, name, type } = req.body || {};
   const headerKey = req.header('x-key');
 
-  // simple validation
   if (!id || !name || !type) {
     return res.status(400).json({ error: 'missing id, name or type in body' });
   }
 
-  // use provided key or generate one
   const key = headerKey || crypto.randomBytes(12).toString('hex');
 
   const entry = {
@@ -75,7 +84,6 @@ app.post('/log', (req, res) => {
     console.error('failed to write logs', err);
   }
 
-  // return a minimal response that the frontend expects (key + echo)
   res.json({ key, received: { id, name, type } });
 });
 
@@ -83,34 +91,39 @@ app.get('/logs', (req, res) => {
   res.json(readLogs());
 });
 
-// Return a minimal runtime configuration to the client.
-// The frontend `getConfiguration` expects a JSON object and will store an `x-key` if present.
 app.get('/config', (req, res) => {
   const providedKey = req.header('x-key');
-
-  // read logs once
   const logs = Array.isArray(readLogs()) ? readLogs() : [];
 
-  // global: total number of recorded stickers across all users
   const global = logs.length;
-
-  // total: number of stickers recorded by this specific user (identified by x-key)
   const total = providedKey ? logs.filter((e) => e.key === providedKey).length : 0;
-
-  // return the provided key if present; otherwise generate a new key for client to store
   const key = providedKey || crypto.randomBytes(12).toString('hex');
 
-  const runtimeConfig = {
+  res.json({
     key,
     serverTime: new Date().toISOString(),
     total,
     global,
-    // add any other runtime flags or URLs here if desired
-  };
+  });
+});
 
-  res.json(runtimeConfig);
+// =========================================================
+// FRONTEND STATIC FILE DISTRIBUTION
+// =========================================================
+
+// 1. Instantly look up and serve JS, CSS, images, and manifest files from /app/build
+app.use(express.static(BUILD_PATH));
+
+// 2. Catch-all fallback router: Serves index.html for any direct page hits or refreshes
+app.get('*', (req, res) => {
+  const indexPath = path.join(BUILD_PATH, 'index.html');
+  if (fs.existsSync(indexPath)) {
+    res.sendFile(indexPath);
+  } else {
+    res.status(404).send('Frontend application assets are missing inside the workspace.');
+  }
 });
 
 app.listen(PORT, () => {
-  console.log(`Logging server listening on port ${PORT}`);
+  console.log(`Unified production server listening on port ${PORT}`);
 });
