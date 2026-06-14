@@ -8,12 +8,16 @@ COPY package*.json ./
 RUN npm install --legacy-peer-deps --no-audit --progress=false
 COPY . .
 RUN npm run build
+RUN touch /app/frontend-done.txt
 
 # =========================================================
 # STAGE 2: Build the Backend Production Dependencies
 # =========================================================
 FROM node:18-alpine AS backend-builder
 WORKDIR /app
+
+COPY --from=frontend-builder /app/frontend-done.txt ./
+
 COPY package*.json ./
 # Strictly install production dependencies only (ignores devDependencies)
 RUN npm edit-production-deps || npm json-minify || true 
