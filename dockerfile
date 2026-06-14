@@ -1,33 +1,42 @@
-# === STAGE 1: Build the React Frontend ===
+# =========================================================
+# STAGE 1: Build the React Frontend (Heavy tools allowed)
+# =========================================================
 FROM node:18-alpine AS frontend-builder
 WORKDIR /app
 COPY package*.json ./
-ENV NPM_CONFIG_LEGACY_PEER_DEPS=true
-RUN npm ci
+# Use the legacy peer deps flag you need, but skip documentation/caches
+RUN npm install --legacy-peer-deps --no-audit --progress=false
 COPY . .
 RUN npm run build
 
-# === STAGE 2: Run the Production Environment ===
-FROM node:18-alpine
+# =========================================================
+# STAGE 2: Build the Backend Production Dependencies
+# =========================================================
+FROM node:18-alpine AS backend-builder
+WORKDIR /app
+COPY package*.json ./
+# Strictly install production dependencies only (ignores devDependencies)
+RUN npm edit-production-deps || npm json-minify || true 
+RUN npm ci --only=production --legacy-peer-deps
+
+# =========================================================
+# STAGE 3: The Final Lightweight, Distroless Runtime
+# =========================================================
+FROM gcr.io/distroless/nodejs18-debian12
 WORKDIR /app
 
-# Install Nginx to serve the frontend static files
-RUN apk add --no-cache nginx
+# Copy production backend dependencies from Stage 2
+COPY --from=backend-builder /app/node_modules ./node_modules
+COPY --from=backend-builder /app/package*.json ./
 
-# Copy backend dependencies and source code
-COPY package*.json ./
-ENV NPM_CONFIG_LEGACY_PEER_DEPS=true
-RUN npm ci --only=production
-COPY . .
+# Copy only the compiled source code files needed to run the server
+COPY server/ ./server/
 
-# Copy the compiled React frontend from Stage 1 into Nginx's HTML directory
-COPY --from=frontend-builder /app/build /var/www/html
+# Copy the compiled static React build from Stage 1
+COPY --from=frontend-builder /app/build ./build
 
-# Copy our custom Nginx config inside the container
-COPY nginx.conf /etc/nginx/nginx.conf
+# Expose only the backend port (Nginx handles port 80 externally via Compose)
+EXPOSE 8080
 
-# Expose HTTP (80) and Backend (8080) ports internally
-EXPOSE 80 8080
-
-# Start both Nginx and the Node backend server
-CMD nginx && node server/index.js
+# Run the Node application directly without a shell interpreter
+CMD ["node", "server/index.js"]
