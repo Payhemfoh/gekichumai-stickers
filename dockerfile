@@ -5,7 +5,7 @@ FROM node:18-alpine AS frontend-builder
 WORKDIR /app
 COPY package*.json ./
 # Use the legacy peer deps flag you need, but skip documentation/caches
-RUN npm install --legacy-peer-deps --no-audit --progress=false
+RUN npm install --legacy-peer-deps
 COPY . .
 RUN npm run build
 RUN touch /app/frontend-done.txt
