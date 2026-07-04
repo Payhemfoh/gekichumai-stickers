@@ -2,9 +2,7 @@
 services:
   # The Node.js Backend & Static React Frontend
   web-app:
-    build:
-      context: .
-      dockerfile: dockerfile
+    image: ghcr.io/payhemfoh/gekichumai-stickers:latest
     restart: unless-stopped
     expose:
       - "8080"
