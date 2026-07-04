@@ -36,3 +36,22 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+
+  deploy:
+    needs: build-and-push
+    runs-on: ubuntu-latest
+    steps:
+      - uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SSH_PORT || 22 }}
+          script: |
+            set -euo pipefail
+            cd /home/payhemfoh/gekichumai-stickers
+            echo "${{ secrets.GHCR_PAT }}" | docker login ghcr.io -u payhemfoh --password-stdin
+            git pull
+            docker compose pull
+            docker compose up -d
+            docker image prune -f
