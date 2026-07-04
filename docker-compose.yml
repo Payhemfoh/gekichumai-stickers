@@ -2,7 +2,9 @@
 services:
   # The Node.js Backend & Static React Frontend
   web-app:
-    build: .
+    build:
+      context: .
+      dockerfile: dockerfile
     restart: unless-stopped
     expose:
       - "8080"
@@ -20,6 +22,9 @@ services:
       - ./webroot:/var/www/html:ro
     depends_on:
       - web-app
+    # Self-reloads every 6h so renewed certs (written by the certbot container) get picked up
+    # without needing cross-container access to the Docker socket.
+    command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
 
   # The Automated Certbot Renewal Loop Container
   certbot:
@@ -28,5 +33,6 @@ services:
     volumes:
       - ./certbot-etc:/etc/letsencrypt
       - ./webroot:/var/www/html
-    # Wakes up every 12 hours, checks for renewal via webroot, and tells nginx to reload
-    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew --webroot -w /var/www/html; docker compose exec -T nginx nginx -s reload; sleep 12h & wait $${!}; done;'"
+    # Wakes up every 12 hours and checks for renewal via webroot; nginx picks up
+    # renewed certs on its own periodic self-reload (see the nginx service's command).
+    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew --webroot -w /var/www/html; sleep 12h & wait $${!}; done;'"

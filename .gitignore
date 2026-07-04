@@ -25,3 +25,6 @@ yarn-error.log*
 # dev
 src/*.dev.jsx
 src/*.old
+
+/certbot-etc
+/webroot
