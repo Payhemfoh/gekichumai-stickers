@@ -30,7 +30,11 @@ interface CategoryJSON {
 /**
  * Preload a font by fetching its binary and constructing a FontFace.
  * Keeps an optional AbortSignal to cancel the request.
+ *
+ * Not unit-tested: relies on browser fetch/FontFace/document.fonts side effects
+ * that are out of scope for the pure-function test suite.
  */
+/* istanbul ignore next */
 async function preloadFont(fontFamily: string, url: string | URL, signal?: AbortSignal): Promise<void> {
   try {
     const response = await fetch(String(url), {
@@ -91,4 +95,4 @@ export const categories: Category[] = preloadCharacters(characters as unknown as
 export type { Category } from "../models/Category";
 export type { Character } from "../models/Character";
 
-export { preloadFont };
+export { preloadFont, preloadCharacters };
