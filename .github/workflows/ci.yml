@@ -23,4 +23,4 @@ jobs:
         env:
           CI: true
 
-      - run: npm test -- --watchAll=false --passWithNoTests
+      - run: npm test -- --watchAll=false --coverage
