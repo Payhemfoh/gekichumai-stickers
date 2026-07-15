@@ -54,4 +54,9 @@ jobs:
             git pull
             docker compose pull
             docker compose up -d
+            # docker compose up -d only recreates a container when its own service
+            # definition changes, so a bind-mounted nginx.conf edit alone wouldn't
+            # otherwise take effect until nginx's 6h self-reload loop runs. Force
+            # an immediate (graceful, no-op-if-unchanged) reload here instead.
+            docker compose exec -T nginx nginx -s reload || true
             docker image prune -f
