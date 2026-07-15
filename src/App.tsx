@@ -1,4 +1,5 @@
 import SSFangTangTi from "./fonts/ShangShouFangTangTi.woff2";
+import YurukaStd from "./fonts/YurukaStd.woff2";
 import "./App.css";
 import Canvas from "./components/Canvas";
 import { useState, useEffect, useRef } from "react";
@@ -35,20 +36,29 @@ function App() {
     doGetConfiguration();
   }, [rand]);
 
+  // Explicitly preload both canvas fonts (YurukaStd was previously only declared
+  // via CSS @font-face, which the browser fetches lazily; there was no listener
+  // to re-trigger the canvas draw once it finished loading in the background,
+  // so the canvas could stay blank on first visit if the character image
+  // happened to load first). fontsLoaded gates the draw the same way `loaded`
+  // already gates the character image.
+  const [fontsLoaded, setFontsLoaded] = useState<boolean>(false);
   useEffect(() => {
+    const controller = new AbortController();
     async function doPreloadFont() {
-      const controller = new AbortController();
       try {
-        await preloadFont("SSFangTangTi", SSFangTangTi, controller.signal);
+        await Promise.all([
+          preloadFont("SSFangTangTi", SSFangTangTi, controller.signal),
+          preloadFont("YurukaStd", YurukaStd, controller.signal),
+        ]);
       } catch (error) {
         console.error(error);
       } finally {
-        return () => {
-          controller.abort();
-        };
+        setFontsLoaded(true);
       }
     }
     doPreloadFont();
+    return () => controller.abort();
   }, []);
 
   const [infoOpen, setInfoOpen] = useState<boolean>(false);
@@ -126,7 +136,7 @@ function App() {
 
     const img = imgRef.current;
 
-    if (loaded && document.fonts.check("12px YurukaStd") && img.width) {
+    if (loaded && fontsLoaded && img.width) {
       const hRatio = ctx.canvas.width / img.width;
       const vRatio = ctx.canvas.height / img.height;
       const ratio = Math.min(hRatio, vRatio);
