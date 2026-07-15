@@ -17,6 +17,12 @@ interface PickerProps {
   setCategory: (category: string) => void;
 }
 
+// Grid thumbnails live at public/img/thumb/<same path>.webp (see
+// scripts/generate-thumbnails.mjs). The Canvas/export still uses the
+// full-resolution original at /img/<path>.
+const thumbUrl = (imgPath: string) =>
+  `/img/thumb/${imgPath.replace(/\.[^.]+$/, ".webp")}`;
+
 export default function Picker({ setCharacter, setCategory }: PickerProps) {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [search, setSearch] = useState("");
@@ -64,10 +70,17 @@ export default function Picker({ setCharacter, setCategory }: PickerProps) {
           >
             <img
               key={`/img/${c.imgPath}`}
-              src={`/img/${c.imgPath}`}
-              srcSet={`/img/${c.imgPath}`}
+              src={thumbUrl(c.imgPath)}
               alt={c.name}
               loading="lazy"
+              onError={(e) => {
+                // Fall back to the full-resolution image if the thumbnail is missing.
+                const img = e.currentTarget;
+                const full = `/img/${c.imgPath}`;
+                if (img.src !== window.location.origin + full) {
+                  img.src = full;
+                }
+              }}
             />
           </ImageListItem>
         );
