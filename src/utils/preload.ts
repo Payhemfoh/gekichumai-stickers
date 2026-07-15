@@ -54,6 +54,11 @@ async function preloadFont(fontFamily: string, url: string | URL, signal?: Abort
   (document as any).fonts.add(font);
     console.info(`Font ${fontFamily} preload done.`);
   } catch (err) {
+    // An aborted signal (e.g. React StrictMode's dev-only double-invoke of
+    // effects) is expected cancellation, not a real failure - don't alarm.
+    // Duck-type on `.name` rather than `instanceof DOMException`, which can
+    // fail across realms (e.g. sandboxed/iframed preview environments).
+    if (err && typeof err === "object" && (err as { name?: string }).name === "AbortError") return;
     // keep error minimal but visible for debugging
     console.error(`preloadFont(${fontFamily}) failed:`, err);
   }
